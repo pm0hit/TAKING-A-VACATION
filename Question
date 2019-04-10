@@ -1,0 +1,18 @@
+1)Write a function called answer that takes no arguments and returns the value 42. Even without arguments, you will still need parentheses.Don’t forget the colon at the end of the function definition!
+
+2)Define a function called hotel_cost with one argument nights as input. The hotel costs $140 per night. So, the function hotel_cost should return 140 * nights.
+
+3)Below your existing code, define a function called plane_ride_cost that takes a string, city, as input.The function should return a different price depending on the location, similar to the code example above. Below are the valid destinations and their corresponding round-trip prices.
+
+"Charlotte": 183
+"Tampa": 220
+"Pittsburgh": 222
+"Los Angeles": 475
+
+4)Below your existing code, define a function called rental_car_cost with an argument called days.Calculate the cost of renting the car:Every day you rent the car costs $40.if you rent the car for 7 or more days, you get $50 off your total.Alternatively (elif), if you rent the car for 3 or more days, you get $20 off your total.You cannot get both of the above discounts.Return that cost.
+
+5)Below your existing code, define a function called trip_cost that takes two parameters, city and days and returns the sum of calling the rental_car_cost(days), hotel_cost(days - 1), and plane_ride_cost(city) functions.Notice that we changed the argument of hotel_costs() from nights to days - 1. Since we want trip-cost to only depend on two parameters, we have to convert the variable nights into days. If you are going to be staying somewhere, the number of nights you stay there is one less than the number of days you were there (imagine a weekend trip to visit family, you leave Saturday and return Sunday, so you visit for two days, but only stay for one night).
+
+6)Modify your trip_cost function definition. Add a third argument, spending_money.Modify what the trip_cost function does. Add the variable spending_money to the sum that it returns.
+
+7)After your previous code, print out the trip_cost( to "Los Angeles" for 5 days with an extra 600 dollars of spending money.Don’t forget the closing ) after passing in the 3 previous values!
